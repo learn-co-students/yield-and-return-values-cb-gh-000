@@ -1,11 +1,16 @@
 require 'pry'
 
 def hello(array)
-  i = 0
-  while i < array.length
-    yield(array[i])
-    i += 1
-  end
+  if block_given?
+    i = 0
+    stt=[]
+    while i < array.length
+      stt<<yield(array[i])
+      i += 1
+    end
+    stt
+  else
+    array
 end
 
 
