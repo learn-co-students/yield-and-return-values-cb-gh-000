@@ -117,7 +117,7 @@ yield(array[i])
 
 This returns:
 
-```bash
+```bashafdsafdsa
 "Hi, Tim"
 ```
 
